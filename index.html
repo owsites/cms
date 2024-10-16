@@ -57,6 +57,7 @@
   </div>
 
   <script type="text/javascript">
+  	var originUrl = "https://owsites.github.io/cms/"
     // Check if Clerk is loaded and available before using it
     document.addEventListener("DOMContentLoaded", function() {
       const checkClerkLoaded = setInterval(() => {
@@ -68,7 +69,7 @@
             // Redirect to sign-in page on button click
             document.getElementById('sign-in-btn').addEventListener('click', function() {
               // For local development, use file path to dashboard.html
-              const afterSignInUrl = window.location.origin + '/dashboard.html';
+              const afterSignInUrl = originUrl + 'dashboard.html';
               
               window.Clerk.openSignIn({
                 afterSignInUrl: afterSignInUrl
