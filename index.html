@@ -54,10 +54,13 @@
     
     <!-- Sign Up Button -->
     <button id="sign-up-btn">Sign Up</button>
+
+    <!-- Sign Out Button -->
+    <button id="sign-out-btn" style="display: none;">Sign Out</button>
   </div>
 
   <script type="text/javascript">
-  	var originUrl = "https://owsites.github.io/cms/"
+    var originUrl = "https://owsites.github.io/cms/"
     // Check if Clerk is loaded and available before using it
     document.addEventListener("DOMContentLoaded", function() {
       const checkClerkLoaded = setInterval(() => {
@@ -66,11 +69,12 @@
 
           // Clerk is ready, now we can attach event listeners
           window.Clerk.load().then(() => {
+            // Check if the user is signed in and toggle buttons accordingly
+            window.Clerk.user ? showSignOutButton() : showSignInSignUpButtons();
+
             // Redirect to sign-in page on button click
             document.getElementById('sign-in-btn').addEventListener('click', function() {
-              // For local development, use file path to dashboard.html
               const afterSignInUrl = originUrl + 'dashboard.html';
-              
               window.Clerk.openSignIn({
                 afterSignInUrl: afterSignInUrl
               });
@@ -80,10 +84,30 @@
             document.getElementById('sign-up-btn').addEventListener('click', function() {
               window.Clerk.openSignUp();
             });
+
+            // Sign out on button click
+            document.getElementById('sign-out-btn').addEventListener('click', function() {
+              window.Clerk.signOut().then(() => {
+                showSignInSignUpButtons(); // Show sign-in/sign-up buttons after sign out
+              });
+            });
+
+            function showSignOutButton() {
+              document.getElementById('sign-out-btn').style.display = 'inline-block';
+              document.getElementById('sign-in-btn').style.display = 'none';
+              document.getElementById('sign-up-btn').style.display = 'none';
+            }
+
+            function showSignInSignUpButtons() {
+              document.getElementById('sign-out-btn').style.display = 'none';
+              document.getElementById('sign-in-btn').style.display = 'inline-block';
+              document.getElementById('sign-up-btn').style.display = 'inline-block';
+            }
           });
         }
       }, 100); // Check every 100 milliseconds until Clerk is ready
     });
   </script>
 </body>
+
 </html>

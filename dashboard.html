@@ -5,8 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <script async src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest"></script>
+  <script type="text/javascript">
+  window.Clerk.load().then(() => {
+    if (!window.Clerk.user) {
+      window.location.href = "https://owsites.github.io/cms/"; // Redirect to sign-in if not authenticated
+    }
+  });
+</script>
 </head>
 <body>
  <h1>DASHBOARD</h1>
+
+
+ <script type="text/javascript">
+  window.Clerk.load().then(() => {
+    const user = window.Clerk.user;
+    if (user) {
+      document.body.innerHTML = `<br><br><h3>Welcome, ${user.firstName}!</h3>`;
+    }
+  });
+</script>
+
 </body>
 </html>
