@@ -6,25 +6,27 @@
   <title>Dashboard</title>
   <script async src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest"></script>
   <script type="text/javascript">
-  window.Clerk.load().then(() => {
-    if (!window.Clerk.user) {
-      window.location.href = "https://owsites.github.io/cms/"; // Redirect to sign-in if not authenticated
-    }
-  });
-</script>
+    document.addEventListener("DOMContentLoaded", function() {
+      window.Clerk.load().then(() => {
+        const user = window.Clerk.user;
+
+        // If the user is not authenticated, redirect to the sign-in page
+        if (!user) {
+          window.location.href = "https://owsites.github.io/cms/";
+        } else {
+          // If the user is authenticated, display the welcome message
+          const welcomeMessage = `<h3>Welcome, ${user.firstName}!</h3>`;
+          document.getElementById("welcome-div").innerHTML = welcomeMessage;
+        }
+      });
+    });
+  </script>
 </head>
 <body>
  <h1>DASHBOARD</h1>
 
-
- <script type="text/javascript">
-  window.Clerk.load().then(() => {
-    const user = window.Clerk.user;
-    if (user) {
-      document.body.innerHTML = `<br><br><h3>Welcome, ${user.firstName}!</h3>`;
-    }
-  });
-</script>
+ <!-- Placeholder div for the welcome message -->
+ <div id="welcome-div"></div>
 
 </body>
 </html>
