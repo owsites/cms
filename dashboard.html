@@ -12,7 +12,6 @@
     type="text/javascript">
   </script>
 
-  <!-- Clerk JS -->
   <script src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest"></script>
 </head>
 <body>
@@ -23,7 +22,6 @@
 
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
-      // Check if Clerk has loaded
       const checkClerkLoaded = setInterval(() => {
         if (window.Clerk) {
           clearInterval(checkClerkLoaded);
@@ -32,13 +30,13 @@
           window.Clerk.load().then(() => {
             const user = window.Clerk.user;
 
-            // If user is not authenticated, redirect to the sign-in page
-            if (!user) {
-              window.location.href = "https://owsites.github.io/cms/";
-            } else {
-              // If user is authenticated, show welcome message
+            // If the user is authenticated, display welcome message
+            if (user) {
               const welcomeMessage = `<h3>Welcome, ${user.firstName}!</h3>`;
               document.getElementById("welcome-div").innerHTML = welcomeMessage;
+            } else {
+              // If no user session, redirect to the sign-in page
+              window.location.href = "https://owsites.github.io/cms/";
             }
           });
         }
