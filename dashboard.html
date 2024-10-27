@@ -13,12 +13,32 @@
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest"></script>
+
+  <style>
+    /* Simple styling for the sign-out button */
+    #sign-out-btn {
+      display: block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #ff4c4c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #sign-out-btn:hover {
+      background-color: #d33b3b;
+    }
+  </style>
 </head>
 <body>
   <h1>DASHBOARD</h1>
 
   <!-- Placeholder div for the welcome message -->
   <div id="welcome-div"></div>
+
+  <!-- Sign Out Button -->
+  <button id="sign-out-btn" style="display: none;">Sign Out</button>
 
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
@@ -30,10 +50,20 @@
           window.Clerk.load().then(() => {
             const user = window.Clerk.user;
 
-            // If the user is authenticated, display welcome message
+            // If user is authenticated, show welcome message and sign-out button
             if (user) {
               const welcomeMessage = `<h3>Welcome, ${user.firstName}!</h3>`;
               document.getElementById("welcome-div").innerHTML = welcomeMessage;
+              
+              // Show the sign-out button
+              document.getElementById("sign-out-btn").style.display = "block";
+
+              // Sign out functionality
+              document.getElementById("sign-out-btn").addEventListener("click", function() {
+                window.Clerk.signOut().then(() => {
+                  window.location.href = "https://owsites.github.io/cms/"; // Redirect to sign-in page after signing out
+                });
+              });
             } else {
               // If no user session, redirect to the sign-in page
               window.location.href = "https://owsites.github.io/cms/";
