@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Quiz with Dashboard Menu</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling the menu bar */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        /* Adjusting for the iframe */
+        .iframe-container {
+            position: relative;
+            top: 60px; /* Offset to ensure iframe isn't covered by the navbar */
+            width: 100%;
+            height: calc(100vh - 60px);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Menu Bar -->
+    <div class="navbar">
+        <a href="https://owsites.github.io/cms/dashboard.html">Return to Dashboard</a>
+    </div>
+
+    <!-- iFrame containing the quiz content -->
+    <div class="iframe-container">
+        <iframe src="main.html"></iframe> <!-- Ensure the correct path to your existing index.html -->
+    </div>
+
+</body>
+</html>
