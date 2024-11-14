@@ -109,7 +109,7 @@
                         // If user is authenticated, display their name in the navbar
                         if (user) {
                             const userInfoDiv = document.getElementById("user-info");
-                            userInfoDiv.textContent = `Welcome, ${user.firstName}`;
+                            userInfoDiv.textContent = `Logged in as, ${user.firstName}`;
                         } else {
                             // If no user session, redirect to the sign-in page
                             window.location.href = "https://owsites.github.io/cms/";
