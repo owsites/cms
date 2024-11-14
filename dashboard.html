@@ -32,13 +32,7 @@
   </style>
 </head>
 <body>
-  <h1>DASHBOARD</h1>
-
-  <!-- Placeholder div for the welcome message -->
-  <div id="welcome-div"></div>
-
-  <!-- Sign Out Button -->
-  <button id="sign-out-btn" style="display: none;">Sign Out</button>
+  <!-- The body is initially empty -->
 
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
@@ -50,13 +44,17 @@
           window.Clerk.load().then(() => {
             const user = window.Clerk.user;
 
-            // If user is authenticated, show welcome message and sign-out button
+            // If user is authenticated, inject the HTML content
             if (user) {
-              const welcomeMessage = `<h3>Welcome, ${user.firstName}!</h3>`;
-              document.getElementById("welcome-div").innerHTML = welcomeMessage;
-              
-              // Show the sign-out button
-              document.getElementById("sign-out-btn").style.display = "block";
+              // Create the dashboard content dynamically
+              const dashboardContent = `
+                <h1>DASHBOARD</h1>
+                <div id="welcome-div"><h3>Welcome, ${user.firstName}!</h3></div>
+                <button id="sign-out-btn">Sign Out</button>
+              `;
+
+              // Inject the content into the body
+              document.body.innerHTML = dashboardContent;
 
               // Sign out functionality
               document.getElementById("sign-out-btn").addEventListener("click", function() {
