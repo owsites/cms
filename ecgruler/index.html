@@ -143,43 +143,14 @@
               
               <div class="fieldset">
                 <label class="legend legend--quantity" for="quantity">
-                  Quantity
+                  Quantity (To be selected during checkout)
                 </label>
-                <div class="quantity__container">
-                  <button
-                    type="button"
-                    class="button quantity-button quantity-button--decrease"
-                    id="decrease_button"
-                  >
-                    <span class="visually-hidden">decrease</span>
-                  </button>
-                  <button
-                    type="button"
-                    id="increase_button"
-                    class="button quantity-button quantity-button--increase"
-                  >
-                    <span class="visually-hidden">increase</span>
-                  </button>
-                  <input
-                    class="quantity__input"
-                    type="number"
-                    name="quantity"
-                    value="1"
-                    id="quantity"
-                    min="1"
-                  />
-                </div>
+
               </div>
             </div>
             <div class="button-container">
               
-              <button
-                type="button"
-                value="buy_now"
-                class="button button-primary"
-              >
-                Buy it now
-              </button>
+      <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PTafZO4BnLj7If" async> </script> </form>
             </div>
           </form>
           <div class="paragraph paragraph--description">
