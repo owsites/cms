@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="product page" />
+    <link
+      crossorigin="anonymous"
+      media="all"
+      rel="stylesheet"
+      href="./styles/index.css"
+    />
+    <title>White unisex t-shirt - Susparsa</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="skip-link" href="#main">Skip to main content</a>
+      <div class="hamburger-container">
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger-line"></div>
+        </div>
+      </div>
+      <nav class="header-navigation wrapper">
+        <a class="logo" href="/">
+          <span class="visually-hidden">Home page</span>
+          <img class="logo__image" src="./img/logo.svg" alt=""
+        /></a>
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Women</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Men</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Kids</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Company</a>
+          </li>
+        </ul>
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Account</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#">Search</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="#"
+              >Cart (<span aria-live="polite" id="cart_items">0</span>)
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <nav aria-label="Breadcrumb" class="breadcrumb wrapper">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="#">Home</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="#">Women</a>
+        </li>
+        <li class="breadcrumb__item">
+          <span aria-current="page">White unisex t-shirt</span>
+        </li>
+      </ol>
+    </nav>
+    <main id="main" class="wrapper" tabindex="-1">
+      <article class="product product--two-columns">
+        <h1 class="visually-hidden">White unisex t-shirt</h1>
+        <div class="product__content">
+          <div class="product__image-wrapper">
+            <img
+              width="472"
+              height="706"
+              class="product__image"
+              src="./img/main_product.jpg"
+              alt="woman in white unisex t-shirt"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="product__description">
+            <details class="collapse" open>
+              <summary class="collapse__summary">
+                <h2 class="summary__title">Sizing & Fit</h2>
+              </summary>
+              <div class="collapse__content">
+                <div class="paragraph">
+                  <p>Olga is 175cm, she is wearing a size S.</p>
+                </div>
+              </div>
+            </details>
+            <details class="collapse">
+              <summary class="collapse__summary">
+                <h2 class="summary__title">Composition & Care</h2>
+              </summary>
+              <div class="collapse__content">
+                <div class="paragraph">
+                  <p>
+                    Some content. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reprehenderit tempora recusandae officia
+                    suscipit repudiandae fugit voluptatum similique quas quaerat
+                    ex! Est quam vel optio alias? Sapiente porro perferendis
+                    quos a. Rerum inventore architecto incidunt iusto corporis
+                    pariatur laborum, praesentium tempora mollitia ratione
+                    excepturi optio beatae cumque facere officia aperiam
+                    consequuntur blanditiis aspernatur aut asperiores voluptatum
+                    veniam, provident minus quos! Omnis.
+                  </p>
+                </div>
+              </div>
+            </details>
+            <details class="collapse">
+              <summary class="collapse__summary">
+                <h2 class="summary__title">Delivery & Returns</h2>
+              </summary>
+              <div class="collapse__content">
+                <div class="paragraph">
+                  <p>
+                    Some content. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reprehenderit tempora recusandae officia
+                    suscipit repudiandae fugit voluptatum similique quas quaerat
+                    ex! Est quam vel optio alias? Sapiente porro perferendis
+                    quos a. Rerum inventore architecto incidunt iusto corporis
+                    pariatur laborum, praesentium tempora mollitia ratione
+                    excepturi optio beatae cumque facere officia aperiam
+                    consequuntur blanditiis aspernatur aut asperiores voluptatum
+                    veniam, provident minus quos! Omnis.
+                  </p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="product__options">
+          <form class="product__form" action="#" id="product__form">
+            <div class="product__info">
+              <h2
+                class="heading heading--product"
+                id="title"
+                aria-hidden="true"
+              >
+                White unisex t-shirt
+              </h2>
+              <div class="product__price" aria-live="polite">€15.99</div>
+              <small class="tax-info">Tax included</small>
+            </div>
+            <div class="fieldset-wrapper">
+              <fieldset class="fieldset">
+                <legend class="legend">Size</legend>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="size"
+                      value="xs"
+                      checked
+                    />
+                    <span class="radio-item radio-item--size">
+                      <span class="radio-text">xs</span>
+                    </span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="size"
+                      value="s"
+                    />
+                    <span class="radio-item radio-item--size">
+                      <span class="radio-text">s</span>
+                    </span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="size"
+                      value="m"
+                    />
+                    <span class="radio-item radio-item--size">
+                      <span class="radio-text">m</span>
+                    </span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="size"
+                      value="l"
+                    />
+                    <span class="radio-item radio-item--size">
+                      <span class="radio-text">l</span>
+                    </span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="size"
+                      value="xl"
+                    />
+                    <span class="radio-item radio-item--size">
+                      <span class="radio-text">xl</span>
+                    </span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="size"
+                      value="2xl"
+                      disabled
+                    />
+                    <span class="radio-item radio-item--size">
+                      <span class="radio-text">2xl</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="fieldset">
+                <legend class="legend">
+                  Color -
+                  <span
+                    aria-hidden="true"
+                    id="selected_color"
+                    class="picked-color"
+                    >white</span
+                  >
+                </legend>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="color"
+                      value="white"
+                      checked
+                    />
+                    <span
+                      class="radio-item radio-item--color"
+                      data-title="white"
+                    >
+                      <span
+                        class="radio-color thin-border"
+                        style="background-color: var(--white)"
+                      >
+                        <span class="visually-hidden">White color</span>
+                      </span>
+                    </span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="color"
+                      value="black"
+                    />
+                    <span
+                      class="radio-item radio-item--color"
+                      data-title="black"
+                    >
+                      <span
+                        class="radio-color"
+                        style="background-color: var(--black)"
+                      >
+                        <span class="visually-hidden">Black color</span>
+                      </span>
+                    </span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="color"
+                      value="gray"
+                    />
+                    <span
+                      class="radio-item radio-item--color"
+                      data-title="gray"
+                    >
+                      <span
+                        class="radio-color"
+                        style="background-color: var(--bombayl)"
+                      >
+                        <span class="visually-hidden">Gray color</span>
+                      </span>
+                    </span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="color"
+                      value="Purple latte"
+                    />
+                    <span
+                      class="radio-item radio-item--color"
+                      data-title="Purple latte"
+                    >
+                      <span
+                        class="radio-color"
+                        style="background-color: var(--purple)"
+                      >
+                        <span class="visually-hidden">Purple latte color</span>
+                      </span>
+                    </span>
+                  </label>
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="color"
+                      value="red"
+                      disabled
+                    />
+                    <span
+                      class="radio-item radio-item--color"
+                      data-title="Pink"
+                    >
+                      <span
+                        class="radio-color"
+                        style="background-color: var(--pink)"
+                      >
+                        <span class="visually-hidden">Pink color</span>
+                      </span>
+                    </span>
+                  </label>
+
+                  <label class="radio-label">
+                    <input
+                      class="radio-input"
+                      type="radio"
+                      name="color"
+                      value="orange"
+                      disabled
+                    />
+                    <span
+                      class="radio-item radio-item--color"
+                      data-title="Peach"
+                    >
+                      <span
+                        class="radio-color"
+                        style="background-color: var(--peach)"
+                      >
+                        <span class="visually-hidden">Peach color</span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+              <div class="fieldset">
+                <label class="legend legend--quantity" for="quantity">
+                  Quantity
+                </label>
+                <div class="quantity__container">
+                  <button
+                    type="button"
+                    class="button quantity-button quantity-button--decrease"
+                    id="decrease_button"
+                  >
+                    <span class="visually-hidden">decrease</span>
+                  </button>
+                  <button
+                    type="button"
+                    id="increase_button"
+                    class="button quantity-button quantity-button--increase"
+                  >
+                    <span class="visually-hidden">increase</span>
+                  </button>
+                  <input
+                    class="quantity__input"
+                    type="number"
+                    name="quantity"
+                    value="1"
+                    id="quantity"
+                    min="1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="button-container">
+              <button
+                type="submit"
+                name="submit"
+                value="to_card"
+                class="button button-bordered"
+                aria-live="polite"
+              >
+                <span aria-live="polite" id="add_to_cart_button_text">
+                  Add to cart</span
+                >
+              </button>
+              <button
+                type="button"
+                value="buy_now"
+                class="button button-primary"
+              >
+                Buy it now
+              </button>
+            </div>
+          </form>
+          <div class="paragraph paragraph--description">
+            <p>
+              A unisex basic garment with a loose fit. Light and comfortable to
+              your skin.
+            </p>
+            <p>Certification of cotton - <abbr>GOTS</abbr></p>
+          </div>
+        </div>
+      </article>
+      <section class="suggestion">
+        <h2 class="suggestion__header">You may also like</h2>
+        <ul class="suggestion__list">
+          <li class="suggestion__item">
+            <article class="suggestion__product">
+              <div class="suggestion__image-wrapper">
+                <img
+                  class="suggestion__image"
+                  src="./img/pic1_sm.jpg"
+                  alt="woman in hoodie"
+                  loading="lazy"
+                  width="242"
+                  height="360"
+                />
+              </div>
+              <div class="suggestion__description">
+                <h3 class="heading heading heading--suggestion">
+                  <a class="suggestion__link" href="">Product name</a>
+                </h3>
+                <ul class="suggestion-color__list">
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--brown)"
+                    >
+                      <span class="visually-hidden">Brown color</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--peach)"
+                    >
+                      <span class="visually-hidden">Peach color</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--pink)"
+                    >
+                      <span class="visually-hidden">Pink color</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--purple)"
+                    >
+                      <span class="visually-hidden">Purple</span>
+                    </div>
+                  </li>
+                </ul>
+                <p class="suggestion__price">€22</p>
+              </div>
+            </article>
+          </li>
+          <li class="suggestion__item">
+            <article class="suggestion__product">
+              <div class="suggestion__image-wrapper">
+                <img
+                  class="suggestion__image"
+                  src="./img/pic2_sm.jpg"
+                  alt="woman in hoodie"
+                  width="242"
+                  height="360"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="suggestion__description">
+                <h3 class="heading heading--suggestion">
+                  <a class="suggestion__link" href="">Product name</a>
+                </h3>
+                <ul class="suggestion-color__list">
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--brown)"
+                    >
+                      <span class="visually-hidden">Brown</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--peach)"
+                    >
+                      <span class="visually-hidden">Peach</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--pink)"
+                    >
+                      <span class="visually-hidden">Pink</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--purple)"
+                    >
+                      <span class="visually-hidden">Purple</span>
+                    </div>
+                  </li>
+                </ul>
+                <p class="suggestion__price">€30</p>
+              </div>
+            </article>
+          </li>
+          <li class="suggestion__item">
+            <article class="suggestion__product">
+              <ul class="tag-list">
+                <li class="tag-item"><span class="tag">Sold out</span></li>
+              </ul>
+              <div class="suggestion__image-wrapper">
+                <img
+                  class="suggestion__image"
+                  src="./img/pic3_sm.jpg"
+                  alt="woman in hoodie"
+                  width="242"
+                  height="360"
+                  loading="lazy"
+                />
+              </div>
+              <div class="suggestion__description">
+                <h3 class="heading heading--suggestion">
+                  <a class="suggestion__link" href="">Product name</a>
+                </h3>
+                <ul class="suggestion-color__list">
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--brown)"
+                    >
+                      <span class="visually-hidden">Brown</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--peach)"
+                    >
+                      <span class="visually-hidden">Peach</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--pink)"
+                    >
+                      <span class="visually-hidden">Pink</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--purple)"
+                    >
+                      <span class="visually-hidden">Purple</span>
+                    </div>
+                  </li>
+                </ul>
+                <p class="suggestion__price">€40</p>
+              </div>
+            </article>
+          </li>
+          <li class="suggestion__item">
+            <article class="suggestion__product">
+              <div class="suggestion__image-wrapper">
+                <img
+                  class="suggestion__image"
+                  src="./img/pic4_sm.jpg"
+                  alt="woman in hoodie"
+                  width="242"
+                  height="360"
+                  loading="lazy"
+                />
+              </div>
+              <div class="suggestion__description">
+                <h3 class="heading heading--suggestion">
+                  <a class="suggestion__link" href="">Product name</a>
+                </h3>
+                <ul class="suggestion-color__list">
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--brown)"
+                    >
+                      <span class="visually-hidden">Brown</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--peach)"
+                    >
+                      <span class="visually-hidden">Peach</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--pink)"
+                    >
+                      <span class="visually-hidden">Pink</span>
+                    </div>
+                  </li>
+                  <li class="suggestion-color__item">
+                    <div
+                      class="color-container"
+                      style="background-color: var(--purple)"
+                    >
+                      <span class="visually-hidden">Purple</span>
+                    </div>
+                  </li>
+                </ul>
+                <p class="suggestion__price">€20</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container wrapper">
+        <section class="section section--address">
+          <h2 class="heading heading--footer">About</h2>
+          <address class="address">
+            <div class="paragraph paragraph--address">
+              <p>Susparsa Store Geneva, Switzerland</p>
+            </div>
+            <ul class="social">
+              <li class="social__item">
+                <a href="#"
+                  ><span class="icon icon--facebook">
+                    <span class="visually-hidden">facebook</span>
+                  </span></a
+                >
+              </li>
+              <li class="social__item">
+                <a href="#"
+                  ><span class="icon icon--instagram">
+                    <span class="visually-hidden">instagram</span>
+                  </span></a
+                >
+              </li>
+            </ul>
+          </address>
+        </section>
+        <section class="section">
+          <h2 class="heading heading--footer">Company</h2>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">Women</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">Men</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">Kids</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">About Us</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">Our Materials</a>
+            </li>
+          </ul>
+        </section>
+        <section class="section">
+          <h2 class="heading heading--footer">Useful Links</h2>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">Privacy Policy </a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#"> Shipping Policy </a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">Return & Refund Policy </a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">Terms of Service </a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="copyright wrapper">
+        <small class="copyright__text">© Susparsa 2021</small>
+      </div>
+    </footer>
+    <div class="menu-overlay" id="mobile_overlay">
+      <nav class="mobile-menu menu-hidden" id="mobile_menu">
+        <ul class="mobile-navigation">
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="#">Women</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="#">Men</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="#">Kids</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="#">Company</a>
+          </li>
+
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="#">Account</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="#">Search</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="#">Cart</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
