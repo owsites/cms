@@ -41,7 +41,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 0.25rem;
+  padding-top: 10px;
 }
 .logo__image {
   max-width: 8.6875rem;
+
 }
