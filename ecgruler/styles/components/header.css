@@ -52,7 +52,7 @@
   display: none;
   font-size: 1.5rem; /* Adjust size to fit your design */
   font-weight: bold;
-  color: var(--darkblue); /* Use your brand color here */
+  color: #003366; /* Use your brand color here */
 }
 
 /* Responsive styles for mobile */
@@ -68,7 +68,7 @@
   .logo {
     position: static; /* Remove absolute positioning for better mobile alignment */
     text-align: center; /* Center align the text */
-    padding: 40px 0; /* Add padding for spacing */
+    margin-top: 20px 0; 
   }
 }
 
