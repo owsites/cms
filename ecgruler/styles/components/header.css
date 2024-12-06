@@ -48,7 +48,6 @@
 
 }
 
-
 /* General styles for the logo */
 .logo__image {
   max-width: 8.6875rem; /* Default size for larger screens */
@@ -73,7 +72,6 @@
     padding: 5px 0; /* Reduce padding to fit smaller screens */
   }
 }
-
 
 
 
