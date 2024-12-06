@@ -47,3 +47,27 @@
   max-width: 8.6875rem;
 
 }
+
+.logo__text {
+  display: none;
+  font-size: 1.5rem; /* Adjust size to fit your design */
+  font-weight: bold;
+  color: var(--darkblue); /* Use your brand color here */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .logo__image {
+    display: none; /* Hide the logo image */
+  }
+
+  .logo__text {
+    display: inline; /* Show the text version */
+  }
+
+  .logo {
+    position: static; /* Remove absolute positioning for better mobile alignment */
+    text-align: center; /* Center align the text */
+    padding: 10px 0; /* Add padding for spacing */
+  }
+}
