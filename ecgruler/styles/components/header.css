@@ -68,6 +68,6 @@
   .logo {
     position: static; /* Remove absolute positioning for better mobile alignment */
     text-align: center; /* Center align the text */
-    padding: 10px 0; /* Add padding for spacing */
+    padding: 40px 0; /* Add padding for spacing */
   }
 }
