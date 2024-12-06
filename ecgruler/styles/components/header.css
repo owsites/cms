@@ -48,29 +48,36 @@
 
 }
 
-.logo__text {
-  display: none;
-  font-size: 1.5rem; /* Adjust size to fit your design */
-  font-weight: bold;
-  color: #003366; /* Use your brand color here */
+
+/* General styles for the logo */
+.logo__image {
+  max-width: 8.6875rem; /* Default size for larger screens */
+  height: auto;
+}
+
+/* Ensure proper alignment and spacing for the logo container */
+.logo {
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
 }
 
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
   .logo__image {
-    display: none; /* Hide the logo image */
-  }
-
-  .logo__text {
-    display: inline; /* Show the text version */
+    max-width: 5rem; /* Smaller size for mobile devices */
+    height: auto;
   }
 
   .logo {
-    position: static; /* Remove absolute positioning for better mobile alignment */
-    text-align: center; /* Center align the text */
-    margin-top: 20px 0; 
+    padding: 5px 0; /* Reduce padding to fit smaller screens */
   }
 }
+
+
+
+
+
 
 
 .image-overlay {
