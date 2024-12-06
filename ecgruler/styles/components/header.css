@@ -35,23 +35,12 @@
   text-decoration: underline;
 }
 
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-bottom: 0.25rem;
-  padding-top: 10px;
-}
-.logo__image {
-  max-width: 8.6875rem;
-
-}
-
-/* General styles for the logo */
+/* General styles for the logo image */
 .logo__image {
   max-width: 8.6875rem; /* Default size for larger screens */
   height: auto;
+  display: block; /* Ensure it is visible */
+  margin: 0 auto; /* Center the image */
 }
 
 /* Ensure proper alignment and spacing for the logo container */
@@ -66,10 +55,12 @@
   .logo__image {
     max-width: 5rem; /* Smaller size for mobile devices */
     height: auto;
+    display: block; /* Ensure visibility */
   }
 
   .logo {
-    padding: 5px 0; /* Reduce padding to fit smaller screens */
+    padding: 5px 0; /* Adjust padding for better fit on smaller screens */
+    text-align: center; /* Center the logo for mobile */
   }
 }
 
