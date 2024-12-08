@@ -28,7 +28,7 @@
           </li>
 
         </ul>
-           <ul class="header-navigation__list">
+        <ul class="header-navigation__list">
           <li class="header-navigation__item">
             <a class="header-navigation__link" href="https://ecgruler.com">Home</a>
           </li>
@@ -263,6 +263,11 @@
         </ul>
       </section>
     </main>
+<div id="imageOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); align-items: center; justify-content: center;">
+  <img id="overlayImage" src="" style="max-width: 90%; max-height: 90%;" alt="Expanded Image">
+</div>
+
+
 <footer class="footer">
       <div class="footer__container wrapper">
         <section class="section section--address">
@@ -291,7 +296,7 @@
               <a class="footer-list__link" target="_blank" href="https://qatalyst.zohodesk.in/portal/en/newticket">Raise a Ticket</a>
             </li>
             <li class="footer-list__item">
-              <a class="footer-list__link" href="support@qatalyst.zohodesk.in">Email</a>
+              <a class="footer-list__link" href="mailto:support@qatalyst.zohodesk.in">Email</a>
             </li>
           </ul>
         </section>
@@ -320,6 +325,8 @@
     </footer>
 
     <script src="./js/index.js" type="module"></script>
+    <script src="./js/MobileMenu.js" type="module"></script>
+
     <script type="text/javascript">
       document.querySelectorAll('.suggestion__image').forEach((img) => {
   img.addEventListener('click', () => {
