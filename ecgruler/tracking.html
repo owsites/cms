@@ -59,7 +59,6 @@
           <li class="header-navigation__item">
             <span class="">Qatalyst Medical Publishing Co.</span>
           </li>
-
         </ul>
         <ul class="header-navigation__list">
           <li class="header-navigation__item">
@@ -78,7 +77,7 @@
     <main id="main" class="wrapper" tabindex="-1">
       <article class="product product--two-columns">
         <h1 class="visually-hidden">ECG Ruler</h1>
-        <div class="product__content">
+        <div style="align-content: center;" class="product__content">
 
           <div class="product__description">
 gfgsfgsfgsd
@@ -187,21 +186,5 @@ gfgsfgsfgsd
       </nav>
     </div>
     <script src="./js/index.js" type="module"></script>
-    <script type="text/javascript">
-      document.querySelectorAll('.suggestion__image').forEach((img) => {
-  img.addEventListener('click', () => {
-    const overlay = document.getElementById('imageOverlay');
-    const overlayImage = document.getElementById('overlayImage');
-    overlayImage.src = img.src; // Set the clicked image as the overlay source
-    overlay.style.display = 'flex'; // Show the overlay
-  });
-});
 
-document.getElementById('imageOverlay').addEventListener('click', () => {
-  const overlay = document.getElementById('imageOverlay');
-  overlay.style.display = 'none'; // Hide the overlay on click
-});
-
-    </script>
-  </body>
 </html>
