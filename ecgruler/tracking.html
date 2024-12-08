@@ -80,7 +80,15 @@
         <div style="align-content: center;" class="product__content">
 
           <div class="product__description">
-gfgsfgsfgsd
+<div class="tracking-container">
+  <h1>Track Your Speedpost</h1>
+  <input type="text" id="trackingId" placeholder="Enter your Tracking ID" />
+  <br />
+  <button id="trackButton">Track</button>
+</div>
+
+
+
 
           </div>
         </div>
@@ -186,5 +194,15 @@ gfgsfgsfgsd
       </nav>
     </div>
     <script src="./js/index.js" type="module"></script>
-
+<script>
+  document.getElementById('trackButton').addEventListener('click', function () {
+    const trackingId = document.getElementById('trackingId').value.trim();
+    if (trackingId) {
+      const trackingUrl = `https://www.indiapost.gov.in/VAS/Pages/IndiaPostTrackConsignment.aspx?consignment=${trackingId}`;
+      window.open(trackingUrl, '_blank');
+    } else {
+      alert('Please enter a valid Tracking ID.');
+    }
+  });
+</script>
 </html>
