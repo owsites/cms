@@ -78,8 +78,6 @@
       <article class="product product--two-columns">
         <h1 class="visually-hidden">ECG Ruler</h1>
         <div style="align-content: center;" class="product__content">
-
-          <div class="product__description">
 <div class="tracking-container">
   <h1>Track Your Speedpost</h1>
   <input type="text" id="trackingId" placeholder="Enter your Tracking ID" />
@@ -87,10 +85,6 @@
   <button id="trackButton">Track</button>
 </div>
 
-
-
-
-          </div>
         </div>
        </article>
 
@@ -198,7 +192,7 @@
   document.getElementById('trackButton').addEventListener('click', function () {
     const trackingId = document.getElementById('trackingId').value.trim();
     if (trackingId) {
-      const trackingUrl = `https://www.indiapost.gov.in/VAS/Pages/IndiaPostTrackConsignment.aspx?consignment=${trackingId}`;
+      const trackingUrl = `https://www.indiapost.gov.in/_layouts/15/dop.portal.tracking/trackconsignment.aspx?consignmentno=${trackingId}`;
       window.open(trackingUrl, '_blank');
     } else {
       alert('Please enter a valid Tracking ID.');
